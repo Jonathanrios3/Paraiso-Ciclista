@@ -1,0 +1,16 @@
+<div>
+  <form ng-submit = "vm.consultar(vm.codigo)">
+    <input type="" name="" ng-model = "vm.codigo">
+    <button type="submit">CONSULTAR</button>
+  </form>
+  <div>
+    <h3 ng-if = "vm.totalPagar">Total Pagar: {{vm.totalPagar}}</h3>
+  </div>
+  <div>
+  	<p>{{vm.parqueo.idCliente.nombre}}</p>
+  	<p>{{vm.parqueo.idCliente.direccion}}</p>
+  	<p>{{vm.parqueo.idCliente.numDocumento}}</p>
+  	<p>{{vm.parqueo.idCliente.telefono}}</p>
+  </div>
+</div>
+

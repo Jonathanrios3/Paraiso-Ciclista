@@ -1,0 +1,28 @@
+<div ng-if = "vm.parqueos">
+	<table class="table table-inverse">
+		<thead>
+			<tr>
+				<th>Codigo</th>
+				<th>Estado</th>
+				<th>Fecha</th>
+				<th>Horas</th>
+				<th>Cliente</th>
+				<th>Total Pagar</th>
+				<th>Retirar</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr ng-repeat = "parqueo in vm.parqueos">
+				<td>{{parqueo.codigoFicha}}</td>
+				<td>{{parqueo.estado}}</td>
+				<td>{{parqueo.fecha}}</td>
+				<td>{{parqueo.horas}}</td>
+				<td>{{parqueo.idCliente.nombre}}</td>
+				<td>{{parqueo.precio}}</td>
+				<td><button ng-click = "vm.guardar(parqueo)" >RETIRAR</button></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
